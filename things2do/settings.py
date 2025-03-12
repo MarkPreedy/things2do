@@ -26,11 +26,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['things-2do-app-00548631d1e.herokuapp.com', '127.0.0.1']
 
-
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.codeinstitue-ide.net"]
 # Application definition
 
 INSTALLED_APPS = [
