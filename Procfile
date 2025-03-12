@@ -1,1 +1,1 @@
-web: gunicorn things2do.wgsi
+web: gunicorn things2do.wsgi
